@@ -1,0 +1,34 @@
+var x = 5;
+var y = "More or less than five";
+
+if (x < 5) {
+  y = "x is less than five";
+} else {
+  y = "x is more than five";
+}
+
+<html>
+  <head>
+    <title>Javascript</title>
+  </head>
+  <body>
+    <p>What is the magic word?</p>
+    <p><input type="text" id="magicWord"></p>
+    <p><button id="checkingMagicWors">Enter Magic Word</button></p>
+
+    <script type="text/javscript">
+      document.getElementById("checkingMagicWord").onclick = function() {
+        var magicWordEntered = document.getElementById("magicWord").value;
+        var magicWord = "abracadabra";
+        if (magicWordEntered == magicWord) {
+          alert("You got it!");
+        } else {
+          alert("Nope, try again!");
+        }
+      }
+    </script>
+
+
+
+  </body>
+</html>
